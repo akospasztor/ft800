@@ -118,8 +118,6 @@ void lcd_start_screen(uint8_t button)
 /*** Main **************************************************************************/
 int main(void)
 {
-	uint8_t button_push = 0;
-
 	SPI_init();
 	while(initFT800());
 	sysDms(500);
@@ -127,6 +125,23 @@ int main(void)
 
 	clrscr();
 
-	lcd_start_screen(button_push);
+	lcd_start_screen(0);
+
+	while(1)
+	{
+
+		uint32_t tag = HOST_MEM_RD32(REG_TOUCH_TAG);
+		
+		//button pressed
+		if(tag == 1)
+		{
+			lcd_start_screen(1);
+		}
+		else
+		{
+			lcd_start_screen(0);
+		}
+		
+	}
 }
 
