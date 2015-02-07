@@ -1,4 +1,4 @@
-FT800
+FTDI FT800 EVE
 =====
 http://www.ftdichip.com/Products/ICs/FT800.html
 
@@ -7,6 +7,8 @@ C Library for FTDI FT800 EVE controller.
 - Flexible
 - Can be easily ported to other microcontrollers
 - Tested with ARM Cortex-M4 microcontroller (STM32F4xx series)
+
+Watch the FT800 in action with an 5” LCD touch screen in my Home Automation project: http://akospasztor.com/projects/homecontrol/
 
 ## Usage
 Functions and defines can be found in ft800.h and ft800.c files. No modifications should be made in these files.
@@ -59,5 +61,3 @@ The following functions are implemented in this library. These functions are eno
 An initialization example for a 5” display, and a demo screen example can be found in main.c.
 
 Please note that a millisec delay function should be implemented in order to use these examples.
-
-Watch the FT800 in action with an 5” LCD touch screen in my Home Automation project: http://akospasztor.com/projects/homecontrol/
