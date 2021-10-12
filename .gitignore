@@ -1,0 +1,13 @@
+docs/html/
+.vscode/
+.sconsign.dblite
+*.pyc
+**/EWARM/*.dep
+**/EWARM/settings/
+**/EWARM/**/Exe/
+**/EWARM/**/List/
+**/EWARM/**/Obj/
+**/GCC/build/
+**/MDK-ARM/*
+!**/MDK-ARM/*.s
+!**/MDK-ARM/*.uvprojx
